@@ -1,3 +1,5 @@
+// KATA
+
 function permuteAPalindrome(input) {
     console.log(input, input.length);
     if (input.length % 2 === 0) {
