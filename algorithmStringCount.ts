@@ -19,3 +19,7 @@ function countChars(text: string) {
   }, {}); // initial value empty object
 }
 console.log(countChars(characters));
+
+
+
+
