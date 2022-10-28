@@ -25,6 +25,7 @@ function anagram(t, s) {
       for (let i = 0; i < t.length; i++) {
         const arrayS = Array.from(s).filter((e) => e === s[i]);
         const arrayT = Array.from(t).filter((e) => e === t[i]);
+        console.log(arrayT);
         if (arrayS === arrayT) {
           return true;
         }
@@ -34,3 +35,25 @@ function anagram(t, s) {
 }
 
 console.log(anagram(input1, input2));
+
+const input1 = "car";
+const input2 = "rca";
+
+function anagram(s, t) {
+  let arrayString = Array.from(s).split("").filter((e) => e == ); // [c, a, r]
+  let arrayString2 = t.split(""); // [r, c, a]
+  if (s.length == t.length) {
+    for (let i = 0; i < t.length; i++) {
+      for (let j = 0; j < s.length; j++) {
+        if (arrayString[i] == arrayString2[j]) {
+          console.log(arrayString[i]);
+          return true;
+        }
+      }
+    }
+  }
+
+  return false;
+}
+
+anagram(input1, input2);

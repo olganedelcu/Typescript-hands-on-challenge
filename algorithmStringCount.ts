@@ -20,6 +20,7 @@ function countChars(text: string) {
 }
 console.log(countChars(characters));
 
-
-
-
+const countChars2 = (text: string) =>
+  text.split("").reduce((map, char) => {
+    return (map[char] = (map[char] || 0) + 1);
+  }, {}); // initial value empty object
