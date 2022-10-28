@@ -50,4 +50,4 @@ x(function y() {console.log("y");})
 
 setTimeout(function () {console.log("Hey")}, 5000); // takes a callback function
 // JS is a synchronous and single-threaded language but you can have asynchronous behaviours in it. JS does not wait for none
-// Main thread and main thread
+// Main thread: call stack. Everything will be executed in the call stack or main thread, never block call stack or main thread.
